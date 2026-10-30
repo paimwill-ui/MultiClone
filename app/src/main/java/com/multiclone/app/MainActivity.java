@@ -43,7 +43,7 @@ public class MainActivity extends Activity {
         boolean allowed = dpm != null && dpm.isProvisioningAllowed(DevicePolicyManager.ACTION_PROVISION_MANAGED_PROFILE);
         new android.app.AlertDialog.Builder(this)
             .setTitle("Diagnóstico do perfil")
-            .setMessage("Android: " + Build.VERSION.RELEASE + "\\nSuporte a perfis: " + supported + "\\nCriação permitida pelo sistema: " + allowed + "\\n\\nSe a criação não for permitida, verifique se já existe perfil de trabalho ou restrições do dispositivo. O MultiClone não pode contornar essas políticas.")
+            .setMessage("Android: " + Build.VERSION.RELEASE + "\nSuporte a perfis: " + supported + "\nCriação permitida pelo sistema: " + allowed + "\n\nSe a criação não for permitida, verifique se já existe perfil de trabalho ou restrições do dispositivo. O MultiClone não pode contornar essas políticas.")
             .setPositiveButton("OK", null).show();
     }
 
